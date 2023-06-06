@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <title>Liên Hệ</title>
+</head>
+
+<body onload=" startAuto()">
+    <div class="container">
+
+        <header>
+            <nav class="child">
+                <ul>
+                    <li><a href=""><img src="images/fb-ico.png" class="fb-ico" alt=""></a></li>
+                    <li><a href=""><img src="images/in-ico.png" class="in-ico" alt=""></a></li>
+                    <li><a href=""><img src="images/yt-ico.png" class="yt-ico" alt=""></a></li>
+                </ul>
+            </nav>
+            <div class="logo">
+                <img src="images/logo.png" alt="">
+            </div>
+            <nav>
+                <ul>
+                    <div class="a1"></div>
+                    <li class="menu-item"><a href="index.html">Trang chủ</a></li>
+                    <li class="menu-item"><a href="#2">Sản phẩm</a></li>
+                    <li class="menu-item"><a href="contact.html">Liên hệ</a></li>
+                    <li class="menu-item"><a href="#4">Về chúng tôi</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- Messenger Plugin chat Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Plugin chat code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "100324382808841");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v17.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+        <main class="main-contact">
+            <h2 style="text-align: center;">Biểu mẫu liên hệ</h2>
+            <form action="" id="contact">
+                <label for="email">Họ và tên</label><br>
+                <input type="text" id="email" required><br>
+                <label for="email">Email</label><br>
+                <input type="email" id="email" required><br>
+                <label for="email">Số điện thoại</label><br>
+                <input type="text" id="email" required><br>
+                <label for="yeucau">Lời nhắn</label><br>
+                <textarea name="" id="yeucau" cols="39" rows="10"></textarea>
+                
+                <button>
+                    <div class="svg-wrapper-1">
+                        <div class="svg-wrapper">
+                            <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0h24v24H0z" fill="none"></path>
+                                <path
+                                    d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"
+                                    fill="currentColor"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <span>Send</span>
+                </button>
+            </form>
+        </main>
+        <footer>
+            <hr>
+            <h3>Copyright by @2023</h3>
+            <hr>
+        </footer>
+
+        <style>
+
+            input{
+                font-size: smaller;
+                height: 20px;
+                width: 300px;
+            }
+            .fa-facebook-messenger {
+                margin-top: 440px;
+            }
+
+            button {
+                font-family: inherit;
+                font-size: 20px;
+                background: royalblue;
+                color: white;
+                padding: 0.7em 1em;
+                padding-left: 0.9em;
+                display: flex;
+                align-items: center;
+                border: none;
+                border-radius: 16px;
+                overflow: hidden;
+                transition: all 0.2s;
+                margin-top: 20px;
+                margin-left: auto;
+                margin-right:650px;
+            }
+
+            button span {
+                display: block;
+                margin-left: 0.3em;
+                transition: all 0.3s ease-in-out;
+            }
+
+            button svg {
+                display: block;
+                transform-origin: center center;
+                transition: transform 0.3s ease-in-out;
+            }
+
+            button:hover .svg-wrapper {
+                animation: fly-1 0.6s ease-in-out infinite alternate;
+            }
+
+            button:hover svg {
+                transform: translateX(1.2em) rotate(45deg) scale(1.1);
+            }
+
+            button:hover span {
+                transform: translateX(5em);
+            }
+
+            button:active {
+                transform: scale(0.95);
+            }
+
+            @keyframes fly-1 {
+                from {
+                    transform: translateY(0.1em);
+                }
+
+                to {
+                    transform: translateY(-0.1em);
+                }
+            }
+        </style>
+    </div>
+</body>
+<script src="main.js"></script>
+
+</html>

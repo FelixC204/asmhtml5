@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <title>Trang chủ</title>
+</head>
+
+<body onload=" startAuto()">
+    <div class="container">
+
+        <header>
+            <nav class="child">
+                <ul>
+                    <li><a href=""><img src="images/fb-ico.png" class="fb-ico" alt=""></a></li>
+                    <li><a href=""><img src="images/in-ico.png" class="in-ico" alt=""></a></li>
+                    <li><a href=""><img src="images/yt-ico.png" class="yt-ico" alt=""></a></li>
+                </ul>
+            </nav>
+            <div class="logo">
+                <img src="images/logo.png" alt="" href="index.html">
+            </div>
+            <nav>
+                <ul>
+                    <div class="a1"></div>
+                    <li class="menu-item"><a href="index.html">Trang chủ</a></li>
+                    <li class="menu-item"><a href="#">Sản phẩm</a></li>
+                    <li class="menu-item"><a href="contact.html">Liên hệ</a></li>
+                    <li class="menu-item"><a href="#">Về chúng tôi</a></li>
+                </ul>
+            </nav>
+            <form class="search">
+                <input type="text"required placeholder="Tìm kiếm tại đây">
+                <button type="submit" class="fa-solid fa-magnifying-glass"></button>
+                
+            </form>
+            <div class="slide-image">
+                <div class="slide">
+                    <img src="images/1.jpg" alt="">
+                </div>
+                <div class="slide" hidden>
+                    <img src="images/2.jpg" alt="">
+                </div>
+                <div class="slide" hidden>
+                    <img src="images/3.jpg" alt="">
+                </div>
+                <div class="but">
+                    <button class="back"><
+                    </button>
+                    <button class="next">></button>
+                </div>
+        </header>s
+        <main>
+            <div class="name-prd">
+                <h2>Sản phẩm bán chạy</h2>
+            </div>
+            <div class="product">
+                <img class="sp" src="images/bv.jpg" alt="Product Image">
+                <h2>Product Name</h2>
+                <p>Description of the product goes here.</p>
+                <p class="price">$9.99</p>
+                <button class="btatc">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img class="sp" src="images/bv.jpg" alt="Product Image">
+                <h2>Product Name</h2>
+                <p>Description of the product goes here.</p>
+                <p class="price">$9.99</p>
+                <button class="btatc">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img class="sp" src="images/bv.jpg" alt="Product Image">
+                <h2>Product Name</h2>
+                <p>Description of the product goes here.</p>
+                <p class="price">$9.99</p>
+                <button class="btatc">Add to Cart</button>
+
+            </div>
+            <div class="product">
+                <img class="sp" src="images/bv.jpg" alt="Product Image">
+                <h2>Product Name</h2>
+                <p>Description of the product goes here.</p>
+                <p class="price">$9.99</p>
+                <button class="btatc">Add to Cart</button>
+            </div>
+            <h2>Bài viết nổi bật</h2>
+            <div class="featured-post">
+                <h2>Đây là tiêu đề của bài viết nổi bật</h2>
+                <img class="imgbaiviet" src="images/thumnail.jpg" alt="Ảnh minh họa cho bài viết nổi bật">
+                <p>Đây là đoạn mô tả ngắn gọn về nội dung của bài viết nổi bật.</p>
+                <a href="link-to-article.html">Đọc thêm ...</a>
+            </div>
+            <div class="featured-post">
+                <h2>Đây là tiêu đề của bài viết nổi bật</h2>
+                <img class="imgbaiviet" src="images/thumnail.jpg" alt="Ảnh minh họa cho bài viết nổi bật">
+                <p>Đây là đoạn mô tả ngắn gọn về nội dung của bài viết nổi bật.</p>
+                <a href="link-to-article.html">Đọc thêm ...</a>
+            </div>
+            <div class="featured-post">
+                <h2>Đây là tiêu đề của bài viết nổi bật</h2>
+                <img class="imgbaiviet" src="images/thumnail.jpg" alt="Ảnh minh họa cho bài viết nổi bật">
+                <p>Đây là đoạn mô tả ngắn gọn về nội dung của bài viết nổi bật.</p>
+                <a href="link-to-article.html">Đọc thêm ...</a>
+            </div>
+
+        </main>
+        <footer>
+            <hr>
+            <h3>Copyright by @2023</h3>
+            <hr>
+        </footer>
+    </div>
+    <style>
+        form.search{
+            width: 1199px;
+            height: 20px;
+            margin-top: 0;
+            margin-left: -0px;
+        }
+
+        form>input{
+            margin-left: 980px;
+            font-size: 15px;
+        }
+
+        .fa-solid{
+            font-size: 17px;
+        }
+        
+    </style>
+    <!-- Messenger Plugin chat Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Plugin chat code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "100324382808841");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v17.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+</body>
+<script src="main.js"></script>
+
+</html>

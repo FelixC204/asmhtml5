@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative;
+    display: block;
+    width: 1200px;
+    height: max-content;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: 'Playfair', serif;
+    background-color: #EFF5F5;
+    border: 1.5px solid black;
+}
+
+.logo>img {
+    display: block;
+    max-width: 230px;
+    max-height: 95px;
+    width: auto;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ul {
+    display: flex;
+    height: 51px;
+    background-color: #497174;
+
+}
+
+li {
+    display: block;
+    margin-left: 100px;
+    margin-right: auto;
+}
+
+/* li.active, */
+li:hover {
+    background-color: rgb(64, 104, 91)
+}
+
+li>a {
+    display: block;
+    margin-top: 13px;
+    text-decoration: none;
+    font-size: larger;
+    color: #D6E4E5;
+}
+
+li:hover>a {
+    color: #539532;
+}
+
+
+.fb-ico {
+    width: 20px;
+    margin-left: 900px;
+}
+
+.in-ico {
+    width: 25px;
+    margin-left: -80px;
+}
+
+.yt-ico {
+    width: 20px;
+    margin-left: -130px;
+}
+
+.slide>img {
+    display: block;
+    width: 1100px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 10px 10px 10px #777777;
+}
+
+
+.but {
+    display: block;
+    margin-top: 20px;
+    margin-left: 550px;
+    margin-right: auto;
+}
+
+.back .next {
+    background-color: rgba(176, 30, 30, 0.5);
+}
+
+footer>h3 {
+    text-align: center;
+}
+
+.child {
+    height: 40px;
+}
+
+
+.fa-brands {
+    position: fixed;
+    color: #0084FF;
+    margin-top: -230px;
+    font-size: 70px;
+    margin-left: 1250px;
+}
+
+.product {
+    margin-left: 100px;
+    margin-bottom: 50px;
+    /* margin: 10px; */
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 240px;
+    display: inline-block;
+    text-align: center;
+}
+
+.sp {
+    max-width: 100%;
+    height: auto;
+    opacity: 0.8;
+}
+
+
+.sp:hover {
+    transform: rotateY(180deg);
+    transition: transform 0.6s ease-in-out;
+    box-shadow: 10px 5px 5px rgb(51, 50, 50);
+    opacity: 100;
+}
+
+
+
+h2 {
+    font-size: 1.5em;
+    margin: 0.5em 0;
+}
+
+p {
+    font-size: 1em;
+    margin: 0.5em 0;
+}
+
+.price {
+    color: #f00;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: 0.5em 0;
+}
+
+.featured-post {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.featured-post h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.featured-post img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.featured-post p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.featured-post:hover img{
+    rotate: x 190deg y 200deg;
+    transition: 400ms;
+    box-shadow: 10px 5px 5px rgb(51, 50, 50);
+}
+
+.featured-post a {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.main-contact {
+    height: 800px;
+}
+
+form {
+    display: block;
+    height: 500px;
+    width: 70%;
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: 450px;
+}
+
+.search {
+    border: 5px solid rgba(246, 241, 241, 0.147);
+}
