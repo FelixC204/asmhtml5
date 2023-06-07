@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <head>
+            <nav class="child">
+                <ul>
+                    <li><a href=""><img src="images/fb-ico.png" class="fb-ico" alt=""></a></li>
+                    <li><a href=""><img src="images/in-ico.png" class="in-ico" alt=""></a></li>
+                    <li><a href=""><img src="images/yt-ico.png" class="yt-ico" alt=""></a></li>
+                </ul>
+            </nav>
+            <div class="logo">
+                <img src="images/logo.png" alt="" href="index.html">
+            </div>
+            <nav>
+                <ul>
+                    <div class="a1"></div>
+                    <li class="menu-item"><a href="index.html">Trang chủ</a></li>
+                    <li class="menu-item"><a href="product.html">Sản phẩm</a></li>
+                    <li class="menu-item"><a href="contact.html">Liên hệ</a></li>
+                    <li class="menu-item"><a href="aboutus.html">Về chúng tôi</a></li>
+                </ul>
+            </nav>
+
+    <h2>Xe điện thông minh</h2>
+    <div class="product-section">
+        <div class="product">
+            <img class="sp" src="images/xe.jpg" alt="Xe điện thông minh">
+            <h3>Xe điện thông minh A</h3>
+            <p>Mô tả sản phẩm A.</p>
+            <p class="price">$999</p>
+            <button class="btatc">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img class="sp" src="images/xe.jpg" alt="Xe điện thông minh">
+            <h3>Xe điện thông minh A</h3>
+            <p>Mô tả sản phẩm A.</p>
+            <p class="price">$999</p>
+            <button class="btatc">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img class="sp" src="images/xe.jpg" alt="Xe điện thông minh">
+            <h3>Xe điện thông minh B</h3>
+            <p>Mô tả sản phẩm B.</p>
+            <p class="price">$1,499</p>
+            <button class="btatc">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img class="sp" src="images/xe.jpg" alt="Xe điện thông minh">
+            <h3>Xe điện thông minh B</h3>
+            <p>Mô tả sản phẩm B.</p>
+            <p class="price">$1,499</p>
+            <button class="btatc">Add to Cart</button>
+        </div>
+    </div>
+    <h2>Điện thoại thông minh</h2>
+    <div class="product-section">
+        <div class="product">
+            <img class="sp" src="images/dt.jpg" alt="Điện thoại thông minh">
+            <h3>Điện thoại thông minh C</h3>
+            <p>Mô tả sản phẩm C.</p>
+            <p class="price">$799</p>
+            <button class="btatc">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img class="sp" src="images/dt.jpg" alt="Điện thoại thông minh">
+            <h3>Điện thoại thông minh C</h3>
+            <p>Mô tả sản phẩm C.</p>
+            <p class="price">$799</p>
+            <button class="btatc">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img class="sp" src="images/dt.jpg" alt="Điện thoại thông minh">
+            <h3>Điện thoại thông minh D</h3>
+            <p>Mô tả sản phẩm D.</p>
+            <p class="price">$999</p>
+            <button class="btatc">Add to Cart</button>
+        </div>
+    </div>
+    <h2>Phần mềm</h2>
+    <div class="product-section">
+        
+        <div class="product">
+            <img class="sp" src="images/pm.png" alt="Phần mềm">
+            <h3>Phần mềm E</h3>
+            <p>Mô tả sản phẩm E.</p>
+            <p class="price">$299</p>
+            <button class="btatc">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img class="sp" src="images/pm.png" alt="Phần mềm">
+            <h3>Phần mềm E</h3>
+            <p>Mô tả sản phẩm E.</p>
+            <p class="price">$299</p>
+            <button class="btatc">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img class="sp" src="images/pm.png" alt="Phần mềm">
+            <h3>Phần mềm E</h3>
+            <p>Mô tả sản phẩm E.</p>
+            <p class="price">$299</p>
+            <button class="btatc">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img class="sp" src="images/pm.png" alt="Phần mềm">
+            <h3>Phần mềm E</h3>
+            <p>Mô tả sản phẩm E.</p>
+            <p class="price">$299</p>
+            <button class="btatc">Add to Cart</button>
+        </div>
+    </div>
+
+
+
+            <style>
+                .product-section {
+                    display: inline;
+                    flex-wrap: wrap;
+                    /* Thêm thuộc tính này để các sản phẩm xuống dòng khi kích thước màn hình nhỏ hơn */
+                }
+
+                .product-section h2 {
+                    font-size: 24px;
+                    margin-top: 0;
+                    clear: both;
+                    /* Thêm thuộc tính này để xóa bỏ các float trước đó */
+                }
+
+                .product {
+                    flex-basis: calc(25% - 20px);
+                    /* Thay đổi chiều rộng của mỗi item thành 25% và trừ đi khoảng cách giữa chúng */
+                    margin-right: 20px;
+                    /* Thêm khoảng cách bên phải cho mỗi item */
+                    margin-bottom: 20px;
+                    /* Thêm khoảng cách phía dưới cho mỗi item */
+                }
+
+                .product:last-child {
+                    margin-right: 0;
+                }
+
+                .product img {
+                    max-width: 100%;
+                    height: auto;
+                    margin-bottom: 10px;
+                }
+
+                .product h3 {
+                    font-size: 18px;
+                    margin-bottom: 5px;
+                }
+
+                .product p {
+                    font-size: 16px;
+                    line-height: 1.5;
+                    margin-bottom: 10px;
+                }
+
+                .product .price {
+                    font-size: 20px;
+                    font-weight: bold;
+                    color: #007bff;
+                    margin-bottom: 10px;
+                }
+
+                .product button {
+                    font-size: 16px;
+                    padding: 10px 20px;
+                    background-color: #007bff;
+                    border: none;
+                    color: #fff;
+                    border-radius: 5px;
+                    cursor: pointer;
+                }
+
+                .product button:hover {
+                    background-color: #0069d9;
+                }
+            </style>
+</body>
+
+</html>

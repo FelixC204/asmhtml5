@@ -179,7 +179,7 @@ p {
     margin-bottom: 20px;
 }
 
-.featured-post:hover img{
+.featured-post:hover img {
     rotate: x 190deg y 200deg;
     transition: 400ms;
     box-shadow: 10px 5px 5px rgb(51, 50, 50);
@@ -209,4 +209,18 @@ form {
 
 .search {
     border: 5px solid rgba(246, 241, 241, 0.147);
+}
+
+.btatc {
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btatc:hover{
+    background-color: #0069d9;
 }
