@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Xe điện thông minh A - Chi tiết sản phẩm</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- Header của trang chi tiết sản phẩm -->
+        <nav class="child">
+            <ul>
+                <li><a href=""><img src="images/fb-ico.png" class="fb-ico" alt=""></a></li>
+                <li><a href=""><img src="images/in-ico.png" class="in-ico" alt=""></a></li>
+                <li><a href=""><img src="images/yt-ico.png" class="yt-ico" alt=""></a></li>
+            </ul>
+        </nav>
+        <div class="logo">
+            <img src="images/logo.png" alt="" href="index.html">
+        </div>
+        <nav>
+            <ul>
+                <div class="a1"></div>
+                <li class="menu-item"><a href="index.html">Trang chủ</a></li>
+                <li class="menu-item"><a href="product.html">Sản phẩm</a></li>
+                <li class="menu-item"><a href="contact.html">Liên hệ</a></li>
+                <li class="menu-item"><a href="aboutus.html">Về chúng tôi</a></li>
+            </ul class="ulpr">
+        </nav>
+        <h2>Xe điện thông minh A - Chi tiết sản phẩm</h2>
+        <div class="product-section">
+            <div class="product">
+                <img class="spp" src="images/xe.jpg" alt="Xe điện thông minh">
+                <h3>Xe điện thông minh</h3>
+                <p>Mô tả sản phẩm: Đây là chiếc xe điện thông minh được thiết kế với nhiều tính năng đặc biệt như tự
+                    động dừng khi có người đi bộ băng qua, GPS tích hợp để theo dõi và giám sát khoảng cách, và chức
+                    năng tự lái thông minh. Chiếc xe này hoàn toàn không gây ra khí thải và rất tiện lợi cho mọi người
+                    trong việc di chuyển hàng ngày.</p>
+                <ul class="ulpr">
+                    <li>Kích thước: 1800mm x 600mm x 1200mm</li>
+                    <li>Trọng lượng: 50kg</li>
+                    <li>Pin: Lithium-ion 48V 20Ah</li>
+                    <li>Tốc độ tối đa: 25km/h</li>
+                </ul class="ulpr">
+                <p>Ưu điểm: Được thiết kế thông minh và tiện lợi cho mọi người trong việc di chuyển hàng ngày. Xe điện
+                    thông minh không gây ra khí thải, tiết kiệm chi phí và bảo vệ môi trường.</p>
+                <p>Nhược điểm: Giá cả có thể cao hơn so với các loại xe điện thông thường trên thị trường.</p>
+                <h3>Hướng dẫn sử dụng</h3>
+                <p>Để sử dụng chiếc xe điện thông minh này, bạn chỉ cần bật nguồn và đạp chân lên bàn đạp. Bạn có thể
+                    điều khiển xe bằng tay hoặc bằng cách sử dụng màn hình hiển thị điều khiển bên trong xe. Ngoài ra,
+                    xe cũng được trang bị chức năng tự lái thông minh, cho phép bạn di chuyển mà không cần phải lái xe.
+                </p>
+                <h3>Phụ kiện đi kèm</h3>
+                <ul class="ulpr">
+                    <p>Bộ sạc pin</p>
+                    <p>Hướng dẫn sử dụng</p>
+                    <p>Thẻ bảo hành</p>
+                </ul class="ulpr">
+                <div class="product-price">
+                    <h4>Giá sản phẩm</h4>
+                    <p class="gia">199$</p>
+                    <button class="buy-now">MUA NGAY</button>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <hr>
+            <h3>Copyright by @2023</h3>
+            <hr>
+        </footer>
+    </div>
+    <style>
+        .product-section {
+            position: relative;
+            display: flex;
+            justify-content: center;
+        }
+
+        .product {
+            width: 1000px;
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            background-color: #fff;
+        }
+
+        .spp{
+            width: 400px;
+        }
+
+        .sp {
+            width: 100%;
+            max-height: 400px;
+            object-fit: contain;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .ulpr {
+            background-color: #ccc;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .ulpr>p{
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        li:hover {
+            background-color: #949191;
+        }
+
+        h4 {
+            font-size: 18px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            margin-left: 600px;
+        }
+
+        p {
+            line-height: 1.5;
+        }
+
+        .product-price {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+
+        .buy-now {
+            background-color: #1E90FF;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .buy-now:hover {
+            background-color: #0662C6;
+        }
+
+        .gia{
+            font-size: 5rem;
+            margin-left: 0px;
+        }
+    </style>
+
+
+</body>
