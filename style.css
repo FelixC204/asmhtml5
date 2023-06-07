@@ -42,7 +42,7 @@ li {
 
 /* li.active, */
 li:hover {
-    background-color: rgb(64, 104, 91)
+    background-color: rgb(64, 104, 91);
 }
 
 li>a {
